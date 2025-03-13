@@ -18,7 +18,7 @@ public class MainTest {
     public void verifyStatusCode() {
 
         // Base URL of the API
-        RestAssured.baseURI = "http://localhost:8082/books";
+        RestAssured.baseURI = "http://localhost:8085/books";
 
         // Username and password for Basic Authentication
         String username = "user"; // Replace with the correct username
@@ -38,7 +38,7 @@ public class MainTest {
         System.out.println("Response Headers: " + response.getHeaders());
 
         // Perform validation on the response
-        ValidatableResponse validatableResponse = response.then();
+        ValidatableResponse validatableResponse = response.then(); 
 
         /* Validate status code */
         validatableResponse.statusCode(200);

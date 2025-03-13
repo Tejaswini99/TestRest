@@ -1,5 +1,6 @@
 package com.rest.test;
 
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -18,7 +19,7 @@ public class MainTest {
     public void verifyStatusCode() {
 
         // Base URL of the API
-        RestAssured.baseURI = "http://localhost:8082/books";
+        RestAssured.baseURI = "http://localhost:8085/books";
 
         // Username and password for Basic Authentication
         String username = "user"; // Replace with the correct username
