@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 @Test
 public class MainTest {
 
-    RequestSpecification requestSpecification;
+    RequestSpecification requestSpecification; 
     Response response;
     ValidatableResponse validatableResponse;
     @Test
@@ -29,7 +29,6 @@ public class MainTest {
         RequestSpecification requestSpecification = given()
                 .auth().preemptive().basic(username, password) // Use preemptive basic auth
                 .log().all(); // Log all request details (headers, body, etc.)
-
         // Send GET request and get the response
         Response response = requestSpecification.get();
 
